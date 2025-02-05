@@ -1,0 +1,40 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://mirrors.cloud.tencent.com/maven' }
+        maven { url 'https://developer.huawei.com/repo' }
+    }
+}
+
+//rootProject.name = "MyApp"
+//include ':app'
+
+rootProject.name = "msyysoft-android"
+include ':g_api_http'
+include ':g_api_tools'
+include ':g_api_adapter'
+include ':g_api_event'
+include ':g_api_imgloader'
+include ':g_api_download'
+include ':g_api_views'
+
+include ':g_support_app'
+include ':g_support_list'
+include ':g_support_loading'
+include ':g_support_photo'

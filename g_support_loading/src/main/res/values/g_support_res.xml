@@ -1,0 +1,25 @@
+<resources>
+    <attr name="gc_theme" format="reference|color" />
+    <attr name="gc_background" format="reference|color" />
+    <attr name="gc_divider" format="reference|color" />
+    <attr name="gc_gray_1" format="reference|color" />
+    <attr name="gc_gray_2" format="reference|color" />
+
+    字号
+    <attr name="gf_page_title" format="dimension" />
+    <attr name="gf_large" format="dimension" />
+    <attr name="gf_middle" format="dimension" />
+
+    距离
+    <attr name="gd_page" format="dimension" />
+    <attr name="gd_modular" format="dimension" />
+    <attr name="gd_modular_inside" format="dimension" />
+
+    尺寸
+    <attr name="gs_top_h" format="dimension" />
+    <attr name="gs_button_large_h" format="dimension" />
+
+    对话框
+    <attr name="g_theme_dialog" format="reference" />
+</resources>
+

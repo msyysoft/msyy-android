@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_marginTop="?gd_modular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="?gd_page"
+        android:paddingRight="?gd_page"
+        android:textColor="?gc_gray_2"
+        android:textSize="?gf_middle" />
+
+    <g.support.loading.NumberProgressBar
+        android:id="@+id/npb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="?gd_page"
+        android:layout_marginRight="?gd_page"
+        app:progress_reached_color="?gc_theme"
+        app:progress_text_color="?gc_theme"
+        app:progress_text_size="?gf_middle" />
+
+</LinearLayout>

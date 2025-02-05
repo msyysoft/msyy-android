@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?gc_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="?gd_modular"
+                android:paddingRight="?gd_modular"
+                android:textSize="?gf_middle" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?gc_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                style="@android:style/Widget.Holo.ProgressBar"
+                android:id="@+id/pb_loading"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="?gf_middle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    namespace 'g.support.photo'
+    compileSdk COMPILE_SDK_VERSION as int
+
+    defaultConfig {
+        minSdk SDK_VERSION_MIN as int
+        targetSdk SDK_VERSION_TARGET as int
+        versionCode SUPPORT_LOADING_VERSION_CODE as int
+        versionName SUPPORT_LOADING_VERSION_NAME
+    }
+
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+            def newFileName = project.name + '-' + 'v' + SUPPORT_LOADING_VERSION_NAME + '-' + variant.buildType.name + '.aar'
+            outputFileName = newFileName
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:' + ANDROIDX_APPCOMPAT_VERSION
+    implementation 'androidx.recyclerview:recyclerview:' + ANDROIDX_RECYCLERVIEW_VERSION
+    implementation 'com.google.android.material:material:' + ANDROIDX_MATERIAL_VERSION
+    api project(path: ':g_api_tools')
+    api project(path: ':g_api_adapter')
+    api project(path: ':g_api_imgloader')
+    api project(path: ':g_api_event')
+    api project(path: ':g_api_views')
+    api project(path: ':g_support_app')
+    api project(path: ':g_support_loading')
+
+}

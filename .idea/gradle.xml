@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/g_api_adapter" />
+            <option value="$PROJECT_DIR$/g_api_download" />
+            <option value="$PROJECT_DIR$/g_api_event" />
+            <option value="$PROJECT_DIR$/g_api_http" />
+            <option value="$PROJECT_DIR$/g_api_imgloader" />
+            <option value="$PROJECT_DIR$/g_api_tools" />
+            <option value="$PROJECT_DIR$/g_api_views" />
+            <option value="$PROJECT_DIR$/g_support_app" />
+            <option value="$PROJECT_DIR$/g_support_list" />
+            <option value="$PROJECT_DIR$/g_support_loading" />
+            <option value="$PROJECT_DIR$/g_support_photo" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    namespace 'g.api.tools'
+    compileSdk COMPILE_SDK_VERSION as int
+
+    defaultConfig {
+        minSdk SDK_VERSION_MIN as int
+        targetSdk SDK_VERSION_TARGET as int
+        versionCode API_TOOLS_VERSION_CODE as int
+        versionName API_TOOLS_VERSION_NAME
+    }
+
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+            def newFileName = project.name + '-' + 'v' + API_TOOLS_VERSION_NAME + '-' + variant.buildType.name + '.aar'
+            outputFileName = newFileName
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:' + ANDROIDX_APPCOMPAT_VERSION
+    implementation 'androidx.browser:browser:' + ANDROIDX_BROWSER_VERSION
+}
