@@ -1,6 +1,13 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+    id 'io.github.jeadyx.sonatype-uploader' version "2.8"
 }
+
+version = API_IMGLOADER_VERSION_NAME
+apply { from("../publish.gradle") }
+
 android {
     namespace 'g.api.imgloader'
     compileSdk COMPILE_SDK_VERSION as int

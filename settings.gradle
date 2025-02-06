@@ -22,10 +22,7 @@ dependencyResolutionManagement {
     }
 }
 
-//rootProject.name = "MyApp"
-//include ':app'
-
-rootProject.name = "msyysoft-android"
+rootProject.name = "msyy-android"
 include ':g_api_http'
 include ':g_api_tools'
 include ':g_api_adapter'
